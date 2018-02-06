@@ -37,6 +37,47 @@
 			}, false);
 		</script>
 
+		<p id="demo">I like tacos. Does guac cost extra? tacos Al pastor De Adobada are made of thin pork steaks seasoned with adobo seasoning, then skewered and overlapped on one another on a vertical rotisserie cooked and flame-broiled as it spins. I’d have to say, those tacos are on fleek. tacos, tacos, tacos. Pico de gallo, on the side please. tacos dorados called flautas, or taquitos, for which the tortillas are filled with pre-cooked shredded chicken, beef or barbacoa, rolled into an elongated cylinder and deep-fried until crisp.</p>
+
+		<button onclick="aFunction()">Tacos to Burgers</button>
+		<button onclick="bFunction()">Burgers to Tacos</button>
+
+		<script>
+			function aFunction() {
+				var str = document.getElementById("demo").innerHTML;
+				var res = str.replace("tacos", "burgers");
+				document.getElementById("demo").innerHTML = res;
+			}
+			function bFunction() {
+				var str = document.getElementById("demo").innerHTML;
+				var res = str.replace("burgers", "tacos");
+				document.getElementById("demo").innerHTML = res;
+			}
+		</script>
+
+		<input type="text" id="omed">
+
+		<script>
+			document.getElementById("omed").addEventListener("keypress", myFunction);
+			function myFunction() {
+				document.getElementById("omed").style.backgroundColor = "yellow";
+			}
+		</script>
+
+		<p>Write something in the search field and press "ENTER".</p>
+
+		<input type="search" id="myInput">
+
+		<p id="emod"></p>
+
+		<script>
+			document.getElementById("myInput").onsearch = function() {cFunction()};
+
+			function cFunction() {
+				var x = document.getElementById("myInput");
+				document.getElementById("emod").innerHTML = "You are searching for: " + x.value;
+			}
+		</script>
 
 
 	</body>
