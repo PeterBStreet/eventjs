@@ -6,15 +6,37 @@
 	</head>
 	<body>
 		<h1>JavaScript Event</h1>
-		<p>
+		<p id="test">
 			Lorem ipsum dolor amet blue bottle narwhal pinterest, farm-to-table tacos pitchfork PBR&B tote bag iPhone tumblr skateboard distillery photo booth. Church-key mixtape distillery lyft, shabby chic subway tile taxidermy pinterest schlitz tbh. Synth chartreuse chambray, craft beer mixtape master cleanse copper mug cold-pressed man bun before they sold out schlitz adaptogen biodiesel glossier normcore. Mlkshk occupy mixtape meh succulents ramps. Brooklyn wolf fam umami quinoa tilde. Drinking vinegar heirloom sustainable fanny pack succulents forage, vape crucifix.
 		</p>
-		<p>
+		<p id="tset">
 			Lorem ipsum dolor amet try-hard bicycle rights iPhone venmo cliche, paleo DIY etsy. Mixtape keytar PBR&B, scenester brunch godard affogato synth cliche wolf. Street art art party chartreuse church-key vape thundercats leggings. Paleo quinoa authentic cliche. Try-hard street art flexitarian kale chips activated charcoal small batch. Gluten-free gochujang semiotics slow-carb selfies lyft cliche freegan, poutine trust fund. Vegan salvia raw denim lomo four loko retro meh unicorn XOXO cardigan pabst distillery photo booth.
 		</p>
-		<p>
+		<p id="peter">
 			Lorem ipsum dolor amet thundercats raclette ethical put a bird on it keytar, keffiyeh hot chicken franzen. Enamel pin dreamcatcher hexagon lo-fi. Kinfolk tumblr franzen cornhole artisan slow-carb yr adaptogen freegan hell of asymmetrical food truck mlkshk. Shabby chic heirloom austin messenger bag, synth keffiyeh adaptogen ramps vaporware photo booth subway tile crucifix pok pok gluten-free tofu. Everyday carry air plant craft beer coloring book subway tile. Gastropub chartreuse microdosing shoreditch lo-fi DIY offal portland ugh vexillologist pour-over woke tbh food truck. Ramps 90's chillwave everyday carry blog seitan.
 		</p>
+		<script>
+			// var is the variable | test is the name of the variable which is named above | get element by class "test"
+			var test = document.getElementById("test");
+			// every time the cursor is moved over class test the "text" will change color to red
+			test.addEventListener("mouseover", function( event ) {
+				// highlight the mouseover target
+				event.target.style.color = "red";
+			}, false);
+		</script>
+<script>
+	var tset = document.getElementById("tset");
+	tset.addEventListener("mouseover", function(event ) {
+		event.target.style.fontSize = "30px";
+	}, false);
+</script>
+		<script>
+			var peter = document.getElementById("peter");
+			peter.addEventListener("mouseover", function(event ) {
+				event.target.style.hilight = "blue";
+			}, false);
+		</script>
+
 
 
 	</body>
