@@ -6,37 +6,66 @@
 	</head>
 	<body>
 		<h1>JavaScript Event</h1>
+
+		<!-- This ipsum text is hipster -->
+		<!-- The first paragraph of text is the test variable. This text will change from black to red when the mouse is scrolled over the text. I would like to update the code so that when the text will revert to black once the mouse is scrolled off the text.
+-->
 		<p id="test">
 			Lorem ipsum dolor amet blue bottle narwhal pinterest, farm-to-table tacos pitchfork PBR&B tote bag iPhone tumblr skateboard distillery photo booth. Church-key mixtape distillery lyft, shabby chic subway tile taxidermy pinterest schlitz tbh. Synth chartreuse chambray, craft beer mixtape master cleanse copper mug cold-pressed man bun before they sold out schlitz adaptogen biodiesel glossier normcore. Mlkshk occupy mixtape meh succulents ramps. Brooklyn wolf fam umami quinoa tilde. Drinking vinegar heirloom sustainable fanny pack succulents forage, vape crucifix.
 		</p>
+
+		<!-- This ipsum text is hipster -->
+		<!-- The second paragraph of text is the tset variable. This text font will change the font from 10px to 30px when the mouse is scrolled over the text. I would like to update the code so that when the text will revert to 10px once the mouse is scrolled off the text.
+-->
 		<p id="tset">
 			Lorem ipsum dolor amet try-hard bicycle rights iPhone venmo cliche, paleo DIY etsy. Mixtape keytar PBR&B, scenester brunch godard affogato synth cliche wolf. Street art art party chartreuse church-key vape thundercats leggings. Paleo quinoa authentic cliche. Try-hard street art flexitarian kale chips activated charcoal small batch. Gluten-free gochujang semiotics slow-carb selfies lyft cliche freegan, poutine trust fund. Vegan salvia raw denim lomo four loko retro meh unicorn XOXO cardigan pabst distillery photo booth.
 		</p>
+
+
+		<!-- This ipsum text is hipster -->
+		<!-- The third paragraph of text is the peter variable. This text will highlight the font in yellowwhen the mouse is scrolled over the text. I would like to update the code so that when the text will revert to non-highlighted once the mouse is scrolled off the text.
+-->
 		<p id="peter">
 			Lorem ipsum dolor amet thundercats raclette ethical put a bird on it keytar, keffiyeh hot chicken franzen. Enamel pin dreamcatcher hexagon lo-fi. Kinfolk tumblr franzen cornhole artisan slow-carb yr adaptogen freegan hell of asymmetrical food truck mlkshk. Shabby chic heirloom austin messenger bag, synth keffiyeh adaptogen ramps vaporware photo booth subway tile crucifix pok pok gluten-free tofu. Everyday carry air plant craft beer coloring book subway tile. Gastropub chartreuse microdosing shoreditch lo-fi DIY offal portland ugh vexillologist pour-over woke tbh food truck. Ramps 90's chillwave everyday carry blog seitan.
 		</p>
 		<script>
-			// var is the variable | test is the name of the variable which is named above | get element by class "test"
+			// The following code is based on an example in W3schools
+			// The code specifics are to demonstrate understanding beyond cut and paste
+			// var names the variable test | get element by class "test"
 			var test = document.getElementById("test");
-			// every time the cursor is moved over class test the "text" will change color to red
+			// The scripts will "listen" to the mouse movement.
+			// Every time the cursor is moved over the class "test" the function will trigger an event
 			test.addEventListener("mouseover", function( event ) {
-				// highlight the mouseover target
+			// Once the event is triggered the font color will change to red
 				event.target.style.color = "red";
 			}, false);
 		</script>
 <script>
+	// The following code is based on an example in W3schools
+	// The code specifics are explained to demonstrate understanding beyond cut and paste
+	// var names the variable tset | get element by class "tset"
 	var tset = document.getElementById("tset");
+	// The scripts will "listen" to the mouse movement.
+	// Every time the cursor is moved over the class "tset" the function will trigger an event
 	tset.addEventListener("mouseover", function(event ) {
+		// Once the event is triggered the font size will change to 30px
 		event.target.style.fontSize = "30px";
 	}, false);
 </script>
 		<script>
+			// The following code is based on an example in W3schools
+			// The code specifics are explained to demonstrate understanding beyond cut and paste
+			// var names the variable peter | get element by class "peter"
 			var peter = document.getElementById("peter");
+			// The scripts will "listen" to the mouse movement.
+			// Every time the cursor is moved over the class "peter" the function will trigger an event
 			peter.addEventListener("mouseover", function(event ) {
+				// Once the event is triggered the paragraph will be highlighted in yellow
 				event.target.style.background = "yellow";
 			}, false);
 		</script>
 
+		<!-- This ipsum text is hipster -->
 		<p id="demo">I like tacos. Does guac cost extra? tacos Al pastor De Adobada are made of thin pork steaks seasoned with adobo seasoning, then skewered and overlapped on one another on a vertical rotisserie cooked and flame-broiled as it spins. I’d have to say, those tacos are on fleek. tacos, tacos, tacos. Pico de gallo, on the side please. tacos dorados called flautas, or taquitos, for which the tortillas are filled with pre-cooked shredded chicken, beef or barbacoa, rolled into an elongated cylinder and deep-fried until crisp.</p>
 
 		<button onclick="aFunction()">Tacos to Burgers</button>
